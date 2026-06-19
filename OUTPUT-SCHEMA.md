@@ -2,6 +2,8 @@
 
 Формат итоговых JSON файлов после прохождения research workflow. Эти файлы → вход для билда сайта (HTML / React / любой стек).
 
+> Значения ниже — обезличенные плейсхолдеры, показывают только структуру и формат полей.
+
 ---
 
 ## research/clinic_data.json
@@ -11,69 +13,61 @@
 ```json
 {
   "clinic": {
-    "name": "АПЕКС",
-    "legal_name": "ООО «ИМПЕРИАЛ»",
-    "inn": "1187746945352",
-    "license": "ЛО-77-01-020937 от 22.12.2020",
-    "address": "Москва, ул. Изюмская, д. 39, корп. 1",
-    "district": "Южное Бутово",
-    "postal_code": "117645",
-    "lat": 55.549949,
-    "lng": 37.569118,
+    "name": "<Название клиники>",
+    "legal_name": "ООО «Пример»",
+    "inn": "0000000000000",
+    "license": "ЛО-00-00-000000 от 01.01.2020",
+    "address": "Москва, ул. Примерная, д. 1",
+    "district": "<район>",
+    "postal_code": "000000",
+    "lat": 55.000000,
+    "lng": 37.000000,
     "phones": {
-      "yandex_current": "+7 (495) 157-27-70",
-      "old_site": "8-495-410-73-33"
+      "yandex_current": "+7 (495) 000-00-00",
+      "old_site": "8-495-000-00-00"
     },
-    "email": "stomapex21@yandex.ru",
-    "site": "https://stomapeks.ru/",
-    "yclients_booking": "https://n551917.yclients.com/",
-    "instagram": "https://www.instagram.com/stomapeks21/",
+    "email": "info@example.com",
+    "site": "https://example.com/",
+    "yclients_booking": "https://nXXXXXX.yclients.com/",
+    "instagram": "https://www.instagram.com/example/",
     "vk": null,
     "telegram": null,
     "transit": {
       "metro": [
-        { "name": "Улица Скобелевская", "minutes": 11, "distance_m": 950 },
-        { "name": "Бульвар Адмирала Ушакова", "minutes": 22, "distance_m": null },
-        { "name": "Улица Старокачаловская", "minutes": 30, "distance_m": null }
+        { "name": "<станция 1>", "minutes": 11, "distance_m": 950 },
+        { "name": "<станция 2>", "minutes": 22, "distance_m": null },
+        { "name": "<станция 3>", "minutes": 30, "distance_m": null }
       ],
-      "bus": "С1, С53, 146, 636 до ост. Ул. Новобутовская д. 13"
+      "bus": "<маршруты> до ост. <остановка>"
     },
     "hours_partial": "Открыто до 19:00 (полное расписание уточнить)",
     "founded": 2010,
     "ratings": {
       "yandex": {
         "score": 5.0,
-        "votes": 281,
-        "reviews": 227,
-        "award": "Хорошее место 2026"
+        "votes": 0,
+        "reviews": 0,
+        "award": "Хорошее место <год>"
       },
       "2gis": {
         "score": 4.8,
-        "votes": 42
+        "votes": 0
       },
       "prodoctorov": {
-        "reviews_count": 3
+        "reviews_count": 0
       }
     },
     "rating_breakdown_yandex": {
-      "Качество лечения": "99% (156 отзывов)",
-      "Время ожидания": "100% (46)",
-      "Детская стоматология": "100% (40)",
-      "Удаление зубов": "94% (20)",
-      "Пломбирование": "100% (18)",
-      "Чистота": "94% (18)",
-      "Анестезия": "100% (17)",
-      "Чистка зубов": "88% (17)",
-      "Реставрация зубов": "100% (16)",
-      "Расположение": "100% (13)",
-      "Протезирование": "83% (12)"
+      "Качество лечения": "<N>% (<N> отзывов)",
+      "Время ожидания": "<N>% (<N>)",
+      "Детская стоматология": "<N>% (<N>)"
     },
     "features": [
-      "Хорошее место 2026 (Я.Карты)",
+      "Хорошее место <год> (Я.Карты)",
       "Кешбэк 5% (Я.Карты)",
       "Детский кабинет",
       "Wi-Fi",
-      "Парковка (35 поблизости)",
+      "Парковка",
       "Оплата картой / QR / наличные",
       "Рассрочка",
       "Гарантия",
@@ -93,19 +87,19 @@
       "Рассрочка",
       "Кешбэк 5% Я.Карты"
     ],
-    "slogan_old": "АПЕКС - ЭТО ВАША БЕЛОСНЕЖНАЯ УЛЫБКА",
-    "counters_old": { "clients": 1024, "implants": 4976, "teeth": 17987 }
+    "slogan_old": "<слоган со старого сайта>",
+    "counters_old": { "clients": 0, "implants": 0, "teeth": 0 }
   },
   "doctors": [
     {
-      "slug": "balabanova",
-      "name": "Балабанова Светлана Николаевна",
+      "slug": "doctor-slug",
+      "name": "<ФИО врача>",
       "role": "Главный врач, терапевт, хирург, пародонтолог",
-      "edu": "СПбГМУ им. И.П. Павлова",
+      "edu": "<медицинский вуз>",
       "experience": "20+ лет",
-      "extra": "Курсы ЦНИИС по эндодонтии, ортодонтии (Сторина, СПб), Vector-терапия",
-      "photo_local": "research/images-old-site/doctor_4b5312b4d14318d8282b90d3a0aad351.jpg",
-      "photo_prodoctorov": "research/doctors-prodoctorov/balabanova.jpg"
+      "extra": "<курсы повышения квалификации>",
+      "photo_local": "research/images-old-site/doctor_<hash>.jpg",
+      "photo_prodoctorov": "research/doctors-prodoctorov/doctor-slug.jpg"
     }
   ],
   "services_categories": {
@@ -125,13 +119,13 @@
   ],
   "implant_systems": ["Dentium", "Nobel", "Straumann", "Alfa Bio", "Ot medical"],
   "sources": {
-    "yandex_maps_org": "https://yandex.ru/maps/org/109445100310/",
-    "site": "https://stomapeks.ru/",
-    "2gis": "https://2gis.ru/moscow/firm/70000001047647063",
-    "prodoctorov": "https://prodoctorov.ru/moskva/lpu/76086-apeks/",
-    "zoon": "https://zoon.ru/msk/medical/stomatologicheskaya_klinika_apeks_v_yuzhnom_butovo/",
-    "docdoc": "https://docdoc.ru/clinic/stomatologiya_apeks_5",
-    "instagram": "https://www.instagram.com/stomapeks21/"
+    "yandex_maps_org": "https://yandex.ru/maps/org/<ID>/",
+    "site": "https://example.com/",
+    "2gis": "https://2gis.ru/moscow/firm/<ID>",
+    "prodoctorov": "https://prodoctorov.ru/moskva/lpu/<ID>/",
+    "zoon": "https://zoon.ru/msk/medical/<slug>/",
+    "docdoc": "https://docdoc.ru/clinic/<slug>",
+    "instagram": "https://www.instagram.com/example/"
   }
 }
 ```
@@ -145,10 +139,10 @@
   "unique": 100,
   "reviews": [
     {
-      "author": "Наталья А",
-      "date": "2026-04-14T17:00:02.888Z",
+      "author": "<имя автора>",
+      "date": "2026-01-01T00:00:00.000Z",
       "rating": "5.0",
-      "body": "Рылик Анжела Юрьевна - потрясающий специалист. Ни в одной из клиник района я не видел такого качественного специалиста, как здесь. С зубом мудрости вообще никто не хотел работать..."
+      "body": "<текст отзыва>"
     }
   ]
 }
@@ -168,8 +162,8 @@
 {
   "count": 50,
   "urls": [
-    "https://avatars.mds.yandex.net/get-altay/5120632/2a0000017f49cf7ad8ab7da4635c469cb512/XXXL",
-    "https://avatars.mds.yandex.net/get-altay/4546519/2a0000017f49cf9f017bebda414563a7d275/XXXL"
+    "https://avatars.mds.yandex.net/get-altay/<id>/<hash>/XXXL",
+    "https://avatars.mds.yandex.net/get-altay/<id>/<hash>/XXXL"
   ]
 }
 ```
@@ -217,11 +211,11 @@ URL'ы XXXL разрешения. Файлы скачиваются в `research
 
 ```json
 [
-  { "text": "АПЕКС - стоматология в Москве", "href": "https://stomapeks.ru/" },
-  { "text": "Апекс, стоматологическая клиника", "href": "https://yandex.ru/maps/org/apeks/109445100310/" },
-  { "text": "Стоматология «Апекс»", "href": "https://prodoctorov.ru/moskva/lpu/76086-apeks/" },
-  { "text": "Стоматология Апекс", "href": "https://2gis.ru/moscow/firm/70000001047647063" },
-  { "text": "Стоматология АПЕКС", "href": "https://www.instagram.com/stomapeks21/" }
+  { "text": "<название> - стоматология в Москве", "href": "https://example.com/" },
+  { "text": "<название>, стоматологическая клиника", "href": "https://yandex.ru/maps/org/<ID>/" },
+  { "text": "Стоматология «<название>»", "href": "https://prodoctorov.ru/moskva/lpu/<ID>/" },
+  { "text": "Стоматология <название>", "href": "https://2gis.ru/moscow/firm/<ID>" },
+  { "text": "Стоматология <название>", "href": "https://www.instagram.com/example/" }
 ]
 ```
 
